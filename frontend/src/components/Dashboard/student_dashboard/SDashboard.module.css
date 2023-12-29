@@ -1,0 +1,35 @@
+.container {
+  /* padding: 20px 150px 20px 30px; */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 100px;
+  width: 65vw;
+}
+
+.classroom {
+  /* padding: 0; */
+  text-align: center;
+  min-width: 10rem;
+  max-width: 10rem;
+}
+
+.butName {
+  background-color: #9c7b16;
+  height: 40px;
+  margin-top: 40px;
+  font-size: 12px;
+  min-width: 170px;
+  max-width: 200px;
+}
+
+.textInput_select {
+  width: 100%;
+  padding: 10px;
+  /* margin-bottom: 16px; */
+  border: 2px solid #9c7b16;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  overflow-y: auto;
+}
