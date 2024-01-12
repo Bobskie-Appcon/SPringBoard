@@ -47,8 +47,7 @@ class Classroom(models.Model):
 
 class Group(models.Model):
     name = models.CharField(max_length=50, unique=True)
-    key_code = models.CharField(
-        max_length=10, unique=True, editable=False, default=0)
+    key_code = models.CharField(max_length=10, unique=True, editable=False)
     classroom_fk = models.ForeignKey(
         Classroom, on_delete=models.SET_NULL, null=True, default=None)
     created_at = models.DateTimeField(default=timezone.now)
